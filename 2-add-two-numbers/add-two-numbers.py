@@ -41,8 +41,3 @@ class Solution:
         while list.next:
             list = list.next
         list.next = newNode
-
-    def printList(self, list):
-        while list:
-            print(list.val, end=" ")
-            list = list.next
