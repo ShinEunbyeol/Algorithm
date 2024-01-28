@@ -11,7 +11,6 @@ class Solution:
         if num == "" or num == '-' or num == '+':
             num = "0"
 
-        print(num)
         num = int(num)
         if num < -2**31:
             return -2**31
