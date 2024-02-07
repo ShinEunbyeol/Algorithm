@@ -7,7 +7,12 @@ class Solution:
         nums.sort()
         numsCnt = len(nums)
         result = set()
+        prev = nums[0] - 1
         for i in range(numsCnt-2):
+            if nums[i] == prev:
+                continue
+            prev = nums[i]
+
             j = i + 1
             k = numsCnt - 1
             while j < k:
